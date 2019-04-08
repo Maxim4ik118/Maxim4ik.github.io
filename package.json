@@ -9,13 +9,20 @@
   "main": "gulpfile.js",
   "scripts": {
     "dev": "gulp",
-    "build": "gulp build"
+    "build": "gulp build",
+    "code:lint": "eslint \"./src/js/*.js\"",
+    "code:fix": "eslint \"./src/js/*.js\" --fix",
+    "style:lint": "stylelint \"./src/styles/**/*.scss\" --syntax scss",
+    "style:fix": "stylelint \"./src/styles/**/*.scss\" --syntax scss --fix"
   },
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
     "browser-sync": "^2.26.3",
     "del": "^4.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-babel": "^8.0.0",
@@ -27,11 +34,14 @@
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglify": "^3.0.2"
+    "gulp-uglify": "^3.0.2",
+    "prettier": "^1.16.4",
+    "stylelint": "^9.10.1",
+    "stylelint-prettier": "^1.0.6"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "normalize.css": "8.0.1",
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "normalize.css": "8.0.1"
   }
 }
