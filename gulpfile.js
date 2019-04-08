@@ -26,7 +26,7 @@ const autoprefixer = require('gulp-autoprefixer'),
 /* -== SASS ==- */
 gulp.task('dev_sass', () => {
   return gulp
-    .src(`src/styles/sass/main.${config.syntaxSass}`)
+    .src(`src/styles/main.${config.syntaxSass}`)
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass({}))
@@ -38,7 +38,7 @@ gulp.task('dev_sass', () => {
 });
 gulp.task('prod_sass', () => {
   return gulp
-    .src(`src/styles/sass/main.${config.syntaxSass}`)
+    .src(`src/styles/main.${config.syntaxSass}`)
     .pipe(sass())
     .pipe(autoprefixer(['last 15 versions', '> 1%'], { cascade: false }))
     .pipe(cleanCSS())
@@ -137,7 +137,7 @@ gulp.task(
     // html
     gulp.watch(`src/pages/**/*.html`, gulp.series('dev_html'));
     // styles
-    gulp.watch(`src/styles/**/*.${config.syntaxSass}`, gulp.series('dev_sass'));
+    gulp.watch(`src/styles/*.${config.syntaxSass}`, gulp.series('dev_sass'));
     // scripts
     gulp.watch(`src/js/**/*.js`, gulp.series('dev_scripts'));
   })
