@@ -113,27 +113,29 @@ gulp.task('prod_html', () => {
 
 /* -== Images ==- */
 gulp.task('prod_images', () => {
-  return gulp
-    .src('src/images/**/*')
-    .pipe(
-      imagemin([
-        imagemin.jpegtran({ progressive: true }),
-        imagemin.optipng({ optimizationLevel: 3 }),
-        imagemin.svgo({
-          plugins: [{ removeViewBox: false }, { cleanupIDs: false }],
-        }),
-      ]),
-    )
-    .pipe(
-      webp(
-        imageminWebp({
-          lossless: true,
-          quality: 90,
-          alphaQuality: 90,
-        }),
-      ),
-    )
-    .pipe(gulp.dest('dist/images'));
+  return (
+    gulp
+      .src('src/images/**/*')
+      .pipe(
+        imagemin([
+          imagemin.jpegtran({ progressive: true }),
+          imagemin.optipng({ optimizationLevel: 3 }),
+          imagemin.svgo({
+            plugins: [{ removeViewBox: false }, { cleanupIDs: false }],
+          }),
+        ]),
+      )
+      // .pipe(
+      //   webp(
+      //     imageminWebp({
+      //       lossless: true,
+      //       quality: 90,
+      //       alphaQuality: 90,
+      //     }),
+      //   ),
+      // )
+      .pipe(gulp.dest('dist/images'))
+  );
 });
 
 /* -== Clean dist folder==- */
