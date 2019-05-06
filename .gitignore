@@ -7,6 +7,10 @@ dev
 # Dependency directories
 node_modules
 
+# IDE & Editors
+.idea
+.vscode
+
 # Optional npm cache directory
 .npm
 
