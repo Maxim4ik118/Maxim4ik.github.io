@@ -111,6 +111,20 @@ gulp.task('prod_html', () => {
     .pipe(gulp.dest('dist'));
 });
 
+/* -== Fonts ==- */
+gulp.task('dev_fonts', () => {
+  return gulp
+    .src('src/fonts/**/*')
+    .pipe(gulp.dest(`${config.path.devRoot}/fonts`))
+    .pipe(browserSync.stream());
+});
+gulp.task('prod_fonts', () => {
+  return gulp
+    .src('src/fonts/**/*')
+    .pipe(gulp.dest(`${config.path.prodRoot}/fonts`))
+    .pipe(browserSync.stream());
+});
+
 /* -== Images ==- */
 gulp.task('prod_images', () => {
   return (
@@ -154,7 +168,10 @@ gulp.task('browser-sync', function() {
 });
 
 /* -== Build production ==- */
-gulp.task('build', gulp.series('clean', 'prod_html', 'prod_sass', 'prod_scripts', 'prod_images'));
+gulp.task(
+  'build',
+  gulp.series('clean', 'prod_html', 'prod_sass', 'prod_scripts', 'prod_fonts', 'prod_images'),
+);
 
 const watcher = done => {
   // html
@@ -167,4 +184,7 @@ const watcher = done => {
   done();
 };
 
-gulp.task('default', gulp.parallel('dev_html', 'dev_sass', 'dev_scripts', 'browser-sync', watcher));
+gulp.task(
+  'default',
+  gulp.parallel('dev_html', 'dev_sass', 'dev_scripts', 'dev_fonts', 'browser-sync', watcher),
+);
