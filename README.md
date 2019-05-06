@@ -1,4 +1,4 @@
-#Universal Gulp HTML Boilerplate
+# Universal Gulp HTML Boilerplate
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT) ![dependencies](https://img.shields.io/david/necheporenko/universal-gulp-html-boilerplate.svg?style=flat)
 
 ### Getting Started
