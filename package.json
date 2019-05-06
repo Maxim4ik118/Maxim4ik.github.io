@@ -16,17 +16,17 @@
     "style:fix": "stylelint \"./src/styles/**/*.scss\" --syntax scss --fix"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.0",
-    "@babel/preset-env": "^7.4.2",
-    "browser-sync": "^2.26.3",
-    "del": "^4.0.0",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "browser-sync": "^2.26.5",
+    "del": "^4.1.1",
     "eslint": "^5.16.0",
-    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-prettier": "^4.2.0",
     "eslint-plugin-prettier": "^3.0.1",
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
+    "gulp": "^4.0.1",
+    "gulp-autoprefixer": "^6.1.0",
     "gulp-babel": "^8.0.0",
-    "gulp-clean-css": "^4.0.0",
+    "gulp-clean-css": "^4.2.0",
     "gulp-concat": "^2.6.1",
     "gulp-file-include": "^2.0.1",
     "gulp-imagemin": "^5.0.3",
@@ -38,13 +38,13 @@
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
     "imagemin-webp": "^5.0.0",
-    "prettier": "^1.16.4",
-    "stylelint": "^9.10.1",
+    "prettier": "^1.17.0",
+    "stylelint": "^10.0.1",
     "stylelint-prettier": "^1.0.6"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.1",
     "normalize.css": "8.0.1"
   }
 }
