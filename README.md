@@ -1,7 +1,7 @@
 # Universal Gulp HTML Boilerplate
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT) ![dependencies](https://img.shields.io/david/necheporenko/universal-gulp-html-boilerplate.svg?style=flat)
 
-### Getting Started
+## Getting Started
 
 CLONE THE GIT REPO:
 
@@ -34,7 +34,8 @@ PRODUCTION TEMPLATE
 yarn build
 ```
 
-###File Structure
+## File Structure
+```
 ├── dev # Build files
 ├── dist # Distribution files
 ├── src # Source files
@@ -54,3 +55,4 @@ yarn build
 ├── LICENSE # License agreements
 ├── gulpfile.js # Gulp configuration
 └── package.json # Node packages
+```
