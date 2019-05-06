@@ -36,23 +36,23 @@ yarn build
 
 ## File Structure
 ```
-├── dev # Build files
-├── dist # Distribution files
-├── src # Source files
-│ ├── components # Components directory
-│ ├── files # Other files directory
-│ ├── fonts # Fonts directory
-│ ├── images # Images directory
-│ ├── js # JavaScript files
-│ ├── libs # Libs directory
-│ ├── pages # HTML files
-│ └── styles # Styles files
-├── .editorconfig # Editor configuration
-├── .eslintrc # Eslint configuration
-├── .gitignore # Git ignored files
-├── .prettierrc # Prettier configuration
-├── .stylelintrc # Stylelin configuration
-├── LICENSE # License agreements
-├── gulpfile.js # Gulp configuration
-└── package.json # Node packages
+├── dev               # Build files
+├── dist              # Distribution files
+├── src               # Source files
+│ ├── components      # Components directory
+│ ├── files           # Other files directory
+│ ├── fonts           # Fonts directory
+│ ├── images          # Images directory
+│ ├── js              # JavaScript files
+│ ├── libs            # Libs directory
+│ ├── pages           # HTML files
+│ └── styles          # Styles files
+├── .editorconfig     # Editor configuration
+├── .eslintrc         # Eslint configuration
+├── .gitignore        # Git ignored files
+├── .prettierrc       # Prettier configuration
+├── .stylelintrc      # Stylelin configuration
+├── LICENSE           # License agreements
+├── gulpfile.js       # Gulp configuration
+└── package.json      # Node packages
 ```
