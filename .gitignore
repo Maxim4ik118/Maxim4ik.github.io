@@ -22,7 +22,12 @@ node_modules
 
 # Yarn
 yarn.lock
-yarn-error.log
 
 # NPM
 package-lock.json
+
+# Logs
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
