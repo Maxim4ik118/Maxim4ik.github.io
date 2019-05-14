@@ -1,6 +1,18 @@
 # Universal Gulp HTML Boilerplate
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT) ![dependencies](https://img.shields.io/david/necheporenko/universal-gulp-html-boilerplate.svg?style=flat)
 
+## Features
+
+- Gulp 4
+- SASS / SCSS
+- Autoprefix, compile, concatenate, minify, lint
+- Eslint, Prettier, Stylelint
+- Livereload
+- Placeholder CSS media queries
+- Optimize images
+- WebP
+- Production mode
+
 ## Getting Started
 
 CLONE THE GIT REPO:
