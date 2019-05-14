@@ -85,7 +85,7 @@ gulp.task('prod_scripts', () => {
 /* -== HTML ==- */
 gulp.task('dev_html', () => {
   return gulp
-    .src('src/pages/*.html')
+    .src('src/pages/**/*')
     .pipe(
       fileInclude({
         prefix: '@@',
@@ -98,7 +98,7 @@ gulp.task('dev_html', () => {
 });
 gulp.task('prod_html', () => {
   return gulp
-    .src('src/pages/*.html')
+    .src('src/pages/**/*')
     .pipe(
       fileInclude({
         prefix: '@@',
