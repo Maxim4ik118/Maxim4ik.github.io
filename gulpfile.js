@@ -11,6 +11,7 @@ const config = {
 const autoprefixer = require('gulp-autoprefixer'),
   babel = require('gulp-babel'),
   browserSync = require('browser-sync'),
+  cache = require('gulp-cache'),
   cleanCSS = require('gulp-clean-css'),
   concat = require('gulp-concat'),
   del = require('del'),
@@ -131,21 +132,25 @@ gulp.task('prod_images', () => {
     gulp
       .src('src/images/**/*')
       .pipe(
-        imagemin([
-          imagemin.jpegtran({ progressive: true }),
-          imagemin.optipng({ optimizationLevel: 3 }),
-          imagemin.svgo({
-            plugins: [{ removeViewBox: false }, { cleanupIDs: false }],
-          }),
-        ]),
+        cache(
+          imagemin([
+            imagemin.jpegtran({ progressive: true }),
+            imagemin.optipng({ optimizationLevel: 3 }),
+            imagemin.svgo({
+              plugins: [{ removeViewBox: false }, { cleanupIDs: false }],
+            }),
+          ]),
+        ),
       )
       // .pipe(
-      //   webp(
-      //     imageminWebp({
-      //       lossless: true,
-      //       quality: 90,
-      //       alphaQuality: 90,
-      //     }),
+      //   cache(
+      //     webp(
+      //       imageminWebp({
+      //         lossless: true,
+      //         quality: 90,
+      //         alphaQuality: 90,
+      //       }),
+      //     ),
       //   ),
       // )
       .pipe(gulp.dest('dist/images'))
@@ -156,6 +161,9 @@ gulp.task('prod_images', () => {
 gulp.task('clean', async () => {
   return del.sync('dist');
 });
+
+/* -== Clear cache ==- */
+gulp.task('clear', () => cache.clearAll());
 
 /* -== Browsersync==- */
 gulp.task('browser-sync', function() {
