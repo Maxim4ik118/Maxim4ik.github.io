@@ -46,6 +46,12 @@ PRODUCTION TEMPLATE
 yarn build
 ```
 
+CLEAR CACHE
+
+```sh
+yarn clear
+```
+
 ## File Structure
 ```
 ├── dev               # Build files
