@@ -17,11 +17,11 @@
     "style:fix": "stylelint \"./src/styles/**/*.scss\" --syntax scss --fix"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.4",
-    "@babel/preset-env": "^7.5.4",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
     "browser-sync": "^2.26.7",
     "del": "^5.0.0",
-    "eslint": "^6.0.1",
+    "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-prettier": "^3.1.0",
     "gulp": "^4.0.2",
