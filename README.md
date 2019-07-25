@@ -1,6 +1,8 @@
 # Universal Gulp HTML Boilerplate
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT) ![dependencies](https://img.shields.io/david/necheporenko/universal-gulp-html-boilerplate.svg?style=flat) [![Netlify Status](https://api.netlify.com/api/v1/badges/fccdde45-51bf-4028-bf81-7c41aee853e1/deploy-status)](https://app.netlify.com/sites/universal-gulp-html-boilerplate/deploys)
 
+![universal-gulp-html-boilerplate](https://github.com/necheporenko/universal-gulp-html-boilerplate/blob/master/cover.jpg)
+
 ## Features
 
 - Gulp 4
