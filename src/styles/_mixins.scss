@@ -1,0 +1,32 @@
+@mixin breakpoint($point) {
+    @if $point == xsMobile {
+      @media only screen and (max-width: 374.98px) {
+        @content;
+      }
+    }
+    @if $point == smMobile {
+      @media only screen and (max-width: 575.98px) {
+        @content;
+      }
+    }
+    @if $point==mobile {
+      @media only screen and (max-width: 767.98px) {
+        @content;
+      }
+    }
+    @if $point==tablet {
+      @media only screen and (max-width: 1023.98px) {
+        @content;
+      }
+    }
+    @if $point==laptop {
+      @media only screen and (max-width: 1279.98px) {
+        @content;
+      }
+    }
+    @if $point==desktop {
+      @media only screen and (max-width: 1599.98px) {
+        @content;
+      }
+    }
+  }
