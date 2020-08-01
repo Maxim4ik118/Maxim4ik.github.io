@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>Universal Gulp HTML Boilerplate</title>
+  <meta name="description" content="A universal boilerplate and workflow for building web projects." />
+
+  <meta name="og:title" content="Universal Gulp HTML Boilerplate" />
+  <meta name="og:type" content="website" />
+  <meta name="og:url" content="" />
+  <meta name="og:image" content="" />
+  <meta name="og:site_name" content="Universal Gulp HTML Boilerplate" />
+  <meta name="og:description" content="A universal boilerplate and workflow for building web projects." />
+
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+
+  <link rel="stylesheet" href="./css/main.min.css" />
+  
+</head>
+
+<body>
+  
+  <header class="header-nav">
+    <menu class="nav">
+      <a href="/#/" class="logo"><img src="./images/logo.png" alt="BE_logo"></a>
+      <button type="button" onclick="switchState()" class="nav__btn"></button>
+      <nav class="nav__menu">
+        <ul>
+          <li><a class="nav__link" href="/#/">Opportunity<img src="./images/dropdown-arrow.svg"alt="dropdown-arrow"></a></li>
+          <li><a class="nav__link" href="/#/">Products<img src="./images/dropdown-arrow.svg" alt="dropdown-arrow"></a></li>
+          <li><a class="nav__link" href="/#/">About Us<img src="./images/dropdown-arrow.svg" alt="dropdown-arrow"></a></li>
+          <li><a class="nav__link" href="/#/">Pricing</a></li>
+        </ul>
+      </nav>
+    </menu>
+    <div class="athorization">
+      <a href="/#/" class="lang-switcher">
+        <img src="./images/flag_english.png" alt="">
+        <span>EN</span>
+      </a>
+      <button class="athorization__logInBtn">log in</button>
+    </div>
+  </header>
+  <section class="first-section">
+    <h1>HELLO FIRST SECTION</h1>
+  </section>
+  <script>
+    const switchState = () => {
+      const navBtn = document.querySelector('.nav__btn');
+      const menuNav = document.querySelector('.nav__menu');
+      const headerNav = document.querySelector('.header-nav');
+      const athorization = document.querySelector('.athorization');
+      navBtn.classList.toggle('nav__btn--close');
+      menuNav.classList.toggle('nav__menu--visible');
+      headerNav.classList.toggle('header-nav--visible');
+      athorization.classList.toggle('athorization--visible');
+    }
+  </script>
+  <script src="../js/common.js" defer></script>
+</body>
+
+</html>
