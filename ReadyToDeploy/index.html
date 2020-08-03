@@ -22,48 +22,68 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
 
   <link rel="stylesheet" href="./css/main.min.css" />
-  
+
 </head>
 
 <body>
-  
+
   <header class="header-nav">
-    <menu class="nav">
-      <a href="/#/" class="logo"><img src="./images/logo.png" alt="BE_logo"></a>
-      <button type="button" onclick="switchState()" class="nav__btn"></button>
-      <nav class="nav__menu">
-        <ul>
-          <li><a class="nav__link" href="/#/">Opportunity<img src="./images/dropdown-arrow.svg"alt="dropdown-arrow"></a></li>
-          <li><a class="nav__link" href="/#/">Products<img src="./images/dropdown-arrow.svg" alt="dropdown-arrow"></a></li>
-          <li><a class="nav__link" href="/#/">About Us<img src="./images/dropdown-arrow.svg" alt="dropdown-arrow"></a></li>
-          <li><a class="nav__link" href="/#/">Pricing</a></li>
-        </ul>
-      </nav>
-    </menu>
-    <div class="athorization">
-      <a href="/#/" class="lang-switcher">
-        <img src="./images/flag_english.png" alt="">
-        <span>EN</span>
-      </a>
-      <button class="athorization__logInBtn">log in</button>
+    <div class="header-nav__wrapper">
+      <menu class="nav">
+        <a href="/#/" class="logo"><img src="./images/logo.png" alt="BE_logo"></a>
+        <button type="button" class="nav__btn"></button>
+        <nav class="nav__menu">
+          <ul>
+            <li><a class="nav__link" href="/#/">Opportunity<img src="./images/dropdown-arrow.svg"
+                  alt="dropdown-arrow"></a></li>
+            <li><a class="nav__link" href="/#/">Products<img src="./images/dropdown-arrow.svg"
+                  alt="dropdown-arrow"></a></li>
+            <li><a class="nav__link" href="/#/">About Us<img src="./images/dropdown-arrow.svg"
+                  alt="dropdown-arrow"></a></li>
+            <li><a class="nav__link" href="/#/">Pricing</a></li>
+          </ul>
+        </nav>
+      </menu>
+      <div class="athorization">
+        <a href="/#/" class="lang-switcher">
+          <img src="./images/flag_english.png" alt="">
+          <span>EN</span>
+        </a>
+        <button class="athorization__logInBtn">log in</button>
+      </div>
     </div>
   </header>
   <section class="first-section">
-    <h1>HELLO FIRST SECTION11111</h1>
+      <div class="block__l">
+        <h1 class="first-section__title">Be a better you for
+          a better tomorrow</h1>
+        <button class="first-section__btn">Start your journey</button>
+        <div class="block_r">
+          <div class="block_r__oval"><img src="./images/first-section/oval main.svg" alt=""></div>
+          <div class="block_r__main-pic">
+            <img src="./images/first-section/image main.png" alt="">
+            <div class="block_r__circle"></div>
+          </div>
+          <div class="floating-window">
+            <span>Our concept is simple.</span>
+            <p>We empower people to Be<a href="/#/"> Connected</a></p>
+          </div>
+        </div>
+        <div class="partners">
+          <span>As Seen On</span>
+          <div class="partners__wrapper">
+            <div class="partners__item"><img src="./images/first-section/Forbes_logo.svg.png" alt="Forbes"></div>
+            <div class="partners__item"><img src="./images/first-section/TheSiliconReview.svg" alt="Forbes"></div>
+            <div class="partners__item"><img src="./images/first-section/Wordmark_Black.png" alt="Forbes"></div>
+            <div class="partners__item"><img src="./images/first-section/business-for-home-LOGO.png" alt="Forbes">
+            </div>
+            <div class="partners__item"><img src="./images/first-section/Entrepreneur.svg" alt="Forbes"></div>
+          </div>
+        </div>
+      </div>
   </section>
-  <script>
-    const switchState = () => {
-      const navBtn = document.querySelector('.nav__btn');
-      const menuNav = document.querySelector('.nav__menu');
-      const headerNav = document.querySelector('.header-nav');
-      const athorization = document.querySelector('.athorization');
-      navBtn.classList.toggle('nav__btn--close');
-      menuNav.classList.toggle('nav__menu--visible');
-      headerNav.classList.toggle('header-nav--visible');
-      athorization.classList.toggle('athorization--visible');
-    }
-  </script>
-  <script src="../js/common.js" defer></script>
+
+  <script src="./js/script.js" defer></script>
 </body>
 
 </html>
